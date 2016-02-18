@@ -1,0 +1,1 @@
+# PSR (PHP Standards Recommendation).
