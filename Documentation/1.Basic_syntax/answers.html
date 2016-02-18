@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="../assets/css/main.css"/>
+</head>
+<body>
+<h1 align="center">Basic syntax (answers)</h1>
+
+<h2>PHP tags</h2>
+<ol>
+    <li>
+        <div><code>&lt;?php ... ?&gt;</code></div>
+        <div><code>&lt;? ... ?&gt;</code> (php.ini <b>short_open_tag</b> must be enabled or if PHP was configured with the <b>--enable-short-tags option</b>)</div>
+        <div><code>&lt;?= ... ?&gt;</code> (<b>short_open_tag</b> ini setting or always available from <u>5.4.0</u> version)</div>
+        <div><code>&lt;% ... %&gt;</code> ASP styled tags (are removed from <u>7.0.0</u>) </div>
+        <div><code>&lt;%= ... %&gt;</code> ASP styled tags (are removed from <u>7.0.0</u>) </div>
+        <div><code>&lt;script language="php"&gt;</code> (are removed from <u>7.0.0</u>) </div>
+    </li>
+    <li>Yes.  This prevents accidental whitespace or new lines being added after the PHP closing tag, which may cause unwanted effects because PHP will start output buffering when there is no intention from the programmer to send any output at that point in the script.</li>
+</ol>
+
+<h3 align="center">Notes:</h2>
+<ul>
+    <li>
+        <code>&lt;?php/*blah*/ echo "a"?&gt;</code> would not work (white needed after "php")
+    </li>
+    <li>The last tag "?>" deletes the end of the line.</li>
+</ul>
+</body>
+</html>
